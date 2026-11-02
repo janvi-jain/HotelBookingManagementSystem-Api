@@ -1,3 +1,4 @@
+
 const mongoose = require('mongoose');
 
 const database = async () => {
@@ -11,7 +12,7 @@ const database = async () => {
         console.log('database connected');
 
     } catch (error) {
-        console.log('database not connected', error);
+        console.log('database not connected', error.message);
         throw error;
     }
 };
